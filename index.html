@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Modern Shop</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome for cart icon -->
+  <!-- Font Awesome (for shopping cart icon) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH0+lrxu7GZkA9WJ+KdQezkZV2/Kh0KkC3kWl+3JzGEd9rEj4+usmKym5V9gfOyCgA2ZrRQ+HtYy74RyQbkeLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="dark">
+
   <header>
     <div class="logo">ModernShop</div>
     <div class="cart-icon">
@@ -19,20 +20,25 @@
 
   <main class="product-grid">
     <div class="product-card">
-      <img src="https://via.placeholder.com/200" alt="Product 1">
+      <img src="https://via.placeholder.com/200" alt="Product 1" />
       <h3>Product One</h3>
       <p>$19.99</p>
       <button onclick="addToCart('Product One')">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/200" alt="Product 2">
+      <img src="https://via.placeholder.com/200" alt="Product 2" />
       <h3>Product Two</h3>
       <p>$29.99</p>
       <button onclick="addToCart('Product Two')">Add to Cart</button>
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <script>
+    function addToCart(productName) {
+      alert(productName + " added to cart!");
+    }
+  </script>
+
 </body>
 </html>
