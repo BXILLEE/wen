@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">ModernShop</div>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <main class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Product 1">
+      <h3>Product One</h3>
+      <p>$19.99</p>
+      <button onclick="addToCart('Product One')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Product 2">
+      <h3>Product Two</h3>
+      <p>$29.99</p>
+      <button onclick="addToCart('Product Two')">Add to Cart</button>
+    </div>
+
+    <!-- Add more product cards as needed -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
